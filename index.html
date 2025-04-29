@@ -1,331 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishi Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/7787a7c251.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7787a7c251.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
 
-<!-- Header Section -->
+<!-- Header -->
 <div id="header">
-  <div class="container">
-    <nav>
-      <img src="images/RLOGO.png" class="logo">
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
-
-    <div class="header-text">
-      <h1>Hello, I'm <br><span></span><br></h1>
-      <h4>Master's in Computer Science graduate with a<br>
-        strong foundation in software development, fueled<br>
-        by a passion for machine learning and artificial intelligence,<br> 
-        ready to contribute to innovative projects and collaborative<br> 
-        teams that align with my values and interests.
-      </h4>
+    <div class="container">
+        <nav>
+            <img src="images/RLOGO.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello , I'm <br><span></span><br></h1>
+            <h4>Master's in Computer Science graduate with a<br>
+                strong foundation in software development, fueled<br>
+                by a passion for machine learning and artificial intelligence,<br> 
+                ready to contribute to innovative projects and collaborative<br> 
+                teams that align with my values and interests.
+            </h4>
+        </div>
     </div>
-  </div>
 </div>
 
 <!-- About Section -->
 <div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="images/rishinew.png" alt="Rishi Sharma">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <p>
-          Hello, I'm Rishi Sharma, a Software Engineer driven by a profound fascination for technology. I'm on a mission to create innovative solutions that make a difference.
-          <br><br>
-          My journey in the tech world began with a curiosity for software and its potential to change the world. I've had the privilege of working on exciting projects, where I've used my strong programming skills to craft practical solutions.
-          <br><br>
-          As a Python Full Stack developer, I've been a part of projects that follow structured development processes. I've leveraged tools like Power BI to turn data into insights, and I've optimized web applications for better user experiences. My skills include Python, SQL, React.js, and more.
-          <br><br>
-          I find joy in solving problems and communicating effectively. My goal is to continue exploring the endless possibilities of technology and collaborate on exciting projects. Let's embark on this journey together!
-        </p>
-
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-        </div>
-
-        <!-- Skills Tab Content -->
-        <div class="tab-contents active-tab" id="skills">
-          <div class="skills-list">
-            <div>
-              <i class="fa-brands fa-python" style="color: #FFD43B;"></i>
-              <h2>Python</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-code" style="color: #fffdd0;"></i>
-              <h2>C/C++ / C# / Java</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
-              <h2>JavaScript / TypeScript</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-html5" style="color: #E44D26;"></i>
-              <i class="fa-brands fa-css3-alt" style="color: #264DE4;"></i>
-              <h2>HTML / CSS</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-react" style="color: #00D8FF;"></i>
-              <h2>React / Angular</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-node-js" style="color: #3C873A;"></i>
-              <h2>Node.js / Express</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-flask" style="color: #000000;"></i>
-              <h2>Django / Flask</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i>
-              <h2>Bootstrap / Material UI</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-database" style="color: #007ACC;"></i>
-              <h2>MySQL / PostgreSQL / Oracle</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-database" style="color: #FFA500;"></i>
-              <h2>MongoDB / DynamoDB</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-aws" style="color: #FF9900;"></i>
-              <h2>AWS / GCP / Azure</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-cloud" style="color: #00C853;"></i>
-              <h2>BigQuery / Dataproc / Compute Engine</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-git-alt" style="color: #F05032;"></i>
-              <h2>Git / GitHub</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-bug" style="color: #E91E63;"></i>
-              <h2>Jira / CI/CD / SDLC</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-docker" style="color: #2496ED;"></i>
-              <h2>Docker / Kubernetes</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-chart-line" style="color: #4CAF50;"></i>
-              <h2>Power BI / Tableau / Excel</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-gears" style="color: #9C27B0;"></i>
-              <h2>Apache Spark / Airflow / SAS</h2>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience Tab Content -->
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>American Express</span><br>Designed RDT-to-BMD pipeline, built GCP data pipelines, improved query efficiency by 30%, and led a 9-member engineering team.</li>
-            <li><span>CSUN College of Engineering and Computer Science</span><br>Optimized server pool management saving $400k/year and improved ML demand forecasting accuracy to 98.2%.</li>
-            <li><span>Acceron</span><br>Developed face recognition features, barcode extraction automation, and responsive React UI for web and mobile platforms.</li>
-            <li><span>Technostrap Digital Private Limited</span><br>Monitored 20,000+ radio streams via AWS, built RESTful APIs with DynamoDB, and improved product UI with React.</li>
-          </ul>
-        </div>
-
-        <!-- Education Tab Content -->
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>California State University-Northridge</span><br>Master's of Science in Computer Science</li>
-            <li><span>Shri Vaishnav Vidyapeeth Vishwavidyalaya</span><br>Bachelor's of Engineering in Information Technology</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-                
-<!-- ------------Skill------------- -->
-<div id="skills">
     <div class="container">
-        <h1 class="sub-title">Technical Skills</h1>
-        <div class="skills-list">
-            <div>
-                <i class="fa-brands fa-python" style="color: #FFD43B;"></i>
-                <h2>Python</h2>
-                
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/rishinew.png" alt="Rishi Sharma">
             </div>
-            <div>
-                <i class="fa-solid fa-laptop-code" style="color: #fffdd0;"></i>
-                <h2>C/C++</h2>
-                
-            </div>
-            <div>
-                <i class="fa-brands fa-html5" style="color: #E44D26;"></i>
-                <i class="fa-brands fa-css3-alt" style="color: #264DE4;"></i>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Rishi Sharma, a Software Engineer driven by a profound fascination for technology. I'm on a mission to create innovative solutions that make a difference.<br><br>
+                    My journey in the tech world began with a curiosity for software and its potential to change the world. I've had the privilege of working on exciting projects, where I've used my strong programming skills to craft practical solutions.<br><br>
+                    As a Python Full Stack developer, I've been a part of projects that follow structured development processes. I've leveraged tools like Power BI to turn data into insights, and I've optimized web applications for better user experiences. My skills include Python, SQL, React.js, and more.<br><br>
+                    I find joy in solving problems and communicating effectively. My goal is to continue exploring the endless possibilities of technology and collaborate on exciting projects. Let's embark on this journey together!
+                </p>
 
-                <h2>HTML/CSS</h2>
-                
-            </div>
-            <div>
-                <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
 
-                <h2>Javascript</h2>
-                
-            </div>
-            <div>
-                <i class="fa-sharp fa-solid fa-code" style="color: #007ACC;"></i>
+                <!-- Skills Tab -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>Python, Java, JavaScript, TypeScript, C++, C#</li>
+                        <li>React.js, Angular, Node.js, Express.js, Flask, Django</li>
+                        <li>AWS, GCP, Azure, Docker, Kubernetes, Git, CI/CD</li>
+                        <li>MySQL, PostgreSQL, Oracle, MongoDB, DynamoDB</li>
+                        <li>BigQuery, Dataproc, Compute Engine, Apache Spark, Airflow</li>
+                        <li>Power BI, Tableau, Excel, SDLC, Agile, Jira</li>
+                    </ul>
+                </div>
 
-                <h2>SQL</h2>
-                
-            </div>
-            <div>
-                <i class="fa-brands fa-react" style="color: #00D8FF;"></i>
+                <!-- Experience Tab -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>American Express</span><br>...data pipelines and GCP migration projects...</li>
+                        <li><span>CSUN College of Engineering</span><br>...server optimization and ML demand prediction...</li>
+                        <li><span>Acceron</span><br>...face recognition and barcode scanning...</li>
+                        <li><span>Technostrap Digital</span><br>...AWS radio stream monitoring and full-stack development...</li>
+                    </ul>
+                </div>
 
-                <h2>React</h2>
-                
-                
+                <!-- Education Tab -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>California State University-Northridge</span><br>Master's of Science in Computer Science</li>
+                        <li><span>Shri Vaishnav Vidyapeeth Vishwavidyalaya</span><br>Bachelor's of Engineering in Information Technology</li>
+                    </ul>
+                </div>
             </div>
-
         </div>
     </div>
 </div>
 
-<!-- -------------Projects------------- -->
+<!-- Projects Section -->
 <div id="Projects">
     <div class="container">
         <h1 class="sub-title">Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work11.png">
-                <div class="layer">
-                    <h3>Hand Gesture Recognition</h3>
-                    <p>In this a physically challenged person can control the system with the gestures of hand.</p>
-                    <a href="https://github.com/rishi1014/Hand-Gesture-Recognition"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-
+        <div class="project-list">
+            <div class="project">
+                <h2>TV Listings API Integration</h2>
+                <p>Built a Go program to fetch, filter, and write TV listings to Google Sheets using promo values and canonical data APIs.</p>
             </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>SVVV-DESK</h3>
-                    <p>Made for my undergrad college, teachers and student can upload notes,lecture videos etc...</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+            <div class="project">
+                <h2>Budget Forecasting App</h2>
+                <p>Developed a full-stack application with Angular and Flask to predict monthly budgets using ML models with 92% accuracy.</p>
             </div>
-            <div class="work">
-                <img src="images/pc.png">
-                <div class="layer">
-                    <h3>Price Comparison App</h3>
-                    <p>This app let's you compare the price of an item from multiple stores and saves your money.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
+            <div class="project">
+                <h2>Server Optimization ML Model</h2>
+                <p>Used XGBoost to increase demand prediction accuracy from 96% to 98.2% for university servers, saving $400K annually.</p>
             </div>
         </div>
-        <a href="https://github.com/rishi1014" class="btn">See more</a>
     </div>
 </div>
 
-<!-- ------------contact------------- -->
-
+<!-- Contact Section -->
 <div id="contact">
     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i> rishisharma0914@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> +1 747-235-7532</p>
-                <div class="social-icons">
-                    <a href="https://github.com/rishi1014"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/rishi-sharma14/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/rishisharma0014/"><i class="fa-brands fa-square-instagram"></i></a>
-                </div>
-                <a href="images/RISHI-RESUME.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name = "Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> rishi@example.com</p>
+            <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Rishi.<i class="fa-solid fa-heart"></i></p>
+        <a href="images/Rishi_Resume.pdf" download class="btn">Download Resume</a>
     </div>
 </div>
 
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>© 2025 Rishi Sharma. All rights reserved.</p>
+    </div>
+</footer>
 
+<!-- JavaScript -->
 <script>
+    var typed = new Typed("span", {
+        strings: ["Rishi Sharma", "Software Engineer", "ML Enthusiast"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
+
+    function opentab(tabname) {
+        for (let tablink of tablinks) {
             tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
+        for (let tabcontent of tabcontents) {
             tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
     }
 
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemenu.style.right="0";
+    function openmenu() {
+        document.getElementById("sidemenu").style.right = "0";
     }
-    function closemenu(){
-        sidemenu.style.right="-200px"
+
+    function closemenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
     }
 </script>
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwmU7K5USYNEN7J9ecOCJtv-w8qHnauBKIEEFEbBNG6peqJk87dSU2ctWJnD5Ril_hq/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML=""
-            },2000)
-            form.reset()
 
-    })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-<script src="main.js">
-
-</script>
 </body>
 </html>
-
-
-
