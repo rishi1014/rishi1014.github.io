@@ -43,63 +43,82 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/rishinew.png">
+                <img src="images/rishinew.png" alt="Rishi Sharma">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p> Hello, I'm Rishi Sharma, a Software Engineer driven by a profound fascination for technology. I'm on a mission to create innovative solutions that make a difference.
-                    
-                    <br><br>My journey in the tech world began with a curiosity for software and its potential to change the world. I've had the privilege of working on exciting projects, where I've used my strong programming skills to craft practical solutions.
-                    
-                    <br><br>As a Python Full Stack developer, I've been a part of projects that follow structured development processes. I've leveraged tools like Power BI to turn data into insights, and I've optimized web applications for better user experiences. My skills include Python, SQL, React.js, and more.
-                    
-                    <br><br>I find joy in solving problems and communicating effectively. My goal is to continue exploring the endless possibilities of technology and collaborate on exciting projects. Let's embark on this journey together!</p>
-                
+                <p>
+                    Hello, I'm Rishi Sharma, a Software Engineer driven by a profound fascination for technology. I'm on a mission to create innovative solutions that make a difference.
+                    <br><br>
+                    My journey in the tech world began with a curiosity for software and its potential to change the world. I've had the privilege of working on exciting projects, where I've used my strong programming skills to craft practical solutions.
+                    <br><br>
+                    As a Python Full Stack developer, I've been a part of projects that follow structured development processes. I've leveraged tools like Power BI to turn data into insights, and I've optimized web applications for better user experiences. My skills include Python, SQL, React.js, and more.
+                    <br><br>
+                    I find joy in solving problems and communicating effectively. My goal is to continue exploring the endless possibilities of technology and collaborate on exciting projects. Let's embark on this journey together!
+                </p>
+
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab" id ='skills'>
+
+                <!-- Skills Tab -->
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Full Stack Web Development</span><br>Proficient in front-end and back-end development with expertise in Python, React.js, Django, Flask, and Node.js.</li>
-                        <li><span>Android App Development</span><br>Experienced in building Android apps with a focus on Java-based development</li>
+                        <li><span>Android App Development</span><br>Experienced in building Android apps with a focus on Java-based development.</li>
                         <li><span>UI/UX Design</span><br>Skilled in creating intuitive and user-friendly web and app interfaces, adhering to user-centered design principles.</li>
                     </ul>
                 </div>
-                
+
+                <!-- Experience Tab -->
                 <div class="tab-contents" id="experience">
-                     <ul>
+                    <ul>
                         <li><span>American Express</span><br>
-              Designed an RDT-to-BMD pipeline for seamless data transfer and integration using Python, PySpark, and SQL.<br>
-              Implemented event engine flows to streamline data processes, reducing cross-team delays by 90%.<br>
-              Led the migration of AMEX data from Cornerstone to LUMI (GCP platform), building pipelines with BigQuery, Dataproc, Airflow, and Compute Engine.<br>
-              Led a team of 9 engineers to deliver projects on time with high code quality and performance standards.<br>
-              Optimized PySpark and SQL queries, boosting pipeline efficiency and cutting processing time by 30%.
-        </li>
+                            Designed an RDT-to-BMD pipeline for seamless data transfer and integration using Python, PySpark, and SQL.<br>
+                            Implemented event engine flows to streamline data processes, reducing cross-team delays by 90%.<br>
+                            Led the migration of AMEX data from Cornerstone to LUMI (GCP platform), building pipelines with BigQuery, Dataproc, Airflow, and Compute Engine.<br>
+                            Led a team of 9 engineers to deliver projects on time with high code quality and performance standards.<br>
+                            Optimized PySpark and SQL queries, boosting pipeline efficiency and cutting processing time by 30%.
+                        </li>
 
-        <li><span>CSUN College of Engineering and Computer Science</span><br>
-            Project: Server Pool Optimization and Demand Prediction under supervision of Dr. Abhishek Verma.<br>
-            • Saved $400k annually by optimizing server pool management, reducing costs through system parameter adjustments.<br>
-            • Increased demand prediction accuracy from 96% to 98.2% by integrating new features into XGBoost models.<br>
-            • Refined forecasting with ML features, achieving more reliable and precise demand predictions.
-        </li>
+                        <li><span>CSUN College of Engineering and Computer Science</span><br>
+                            Project: Server Pool Optimization and Demand Prediction under supervision of Dr. Abhishek Verma.<br>
+                            • Saved $400k annually by optimizing server pool management, reducing costs through system parameter adjustments.<br>
+                            • Increased demand prediction accuracy from 96% to 98.2% by integrating new features into XGBoost models.<br>
+                            • Refined forecasting with ML features, achieving more reliable and precise demand predictions.
+                        </li>
 
-        <li><span>Acceron</span><br>
-            • Developed face recognition features with JavaScript, enabling precise boundary detection in selfies and ID photos.<br>
-            • Engineered face matching algorithms using Python, enhancing accuracy for live video and ID photo comparisons.<br>
-            • Automated barcode extraction with PDF417Decoder and OpenCV, improving driving license scanning efficiency.<br>
-            • Built responsive web and mobile UIs using React and Material UI, delivering fast, user-friendly experiences across platforms.
-        </li>
+                        <li><span>Acceron</span><br>
+                            • Developed face recognition features with JavaScript, enabling precise boundary detection in selfies and ID photos.<br>
+                            • Engineered face matching algorithms using Python, enhancing accuracy for live video and ID photo comparisons.<br>
+                            • Automated barcode extraction with PDF417Decoder and OpenCV, improving driving license scanning efficiency.<br>
+                            • Built responsive web and mobile UIs using React and Material UI, delivering fast, user-friendly experiences across platforms.
+                        </li>
 
-        <li><span>Technostrap Digital Private Limited</span><br>
-            • Implemented a monitoring system for 20,000 radio streams using AWS, improving issue detection and satisfaction.<br>
-            • Built responsive mobile and web interfaces using React, JavaScript, and Material design to ensure seamless UX.<br>
-            • Built RESTful APIs integrated with DynamoDB to manage and query large scale station metadata.<br>
-            • Worked with SOAP and REST APIs, handling JSON/XML payloads efficiently for full-stack product deployment.
-        </li>
-    </ul>
+                        <li><span>Technostrap Digital Private Limited</span><br>
+                            • Implemented a monitoring system for 20,000 radio streams using AWS, improving issue detection and satisfaction.<br>
+                            • Built responsive mobile and web interfaces using React, JavaScript, and Material design to ensure seamless UX.<br>
+                            • Built RESTful APIs integrated with DynamoDB to manage and query large scale station metadata.<br>
+                            • Worked with SOAP and REST APIs, handling JSON/XML payloads efficiently for full-stack product deployment.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education Tab -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>California State University-Northridge</span><br>Master's of Science in Computer Science</li>
+                        <li><span>Shri Vaishnav Vidyapeeth Vishwavidyalaya</span><br>Bachelor's of Engineering in Information Technology</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
+
 
                 
                 <div class="tab-contents" id="education">
