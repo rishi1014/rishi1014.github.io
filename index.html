@@ -1,167 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishi Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/7787a7c251.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7787a7c251.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
-
-<!-- Header Section -->
 <div id="header">
-  <div class="container">
-    <nav>
-      <img src="images/RLOGO.png" class="logo">
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-    </nav>
+    <div class="container">
+        <nav>
+            <img src="images/RLOGO.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
 
-    <div class="header-text">
-      <h1>Hello, I'm <br><span></span><br></h1>
-      <h4>Master's in Computer Science graduate with a<br>
-        strong foundation in software development, fueled<br>
-        by a passion for machine learning and artificial intelligence,<br> 
-        ready to contribute to innovative projects and collaborative<br> 
-        teams that align with my values and interests.
-      </h4>
+        </nav>
+        <div class="header-text">
+            <!-- <p>Recent Graduate</p> -->
+            <h1>Hello , I'm <br><span></span><br></h1>
+            <h4>Master's in Computer Science graduate with a<br>
+                strong foundation in software development, fueled<br>
+                by a passion for machine learning and artificial intelligence,<br> 
+                ready to contribute to innovative projects and collaborative<br> 
+                teams that align with my values and interests.
+            </h4>
+        </div>
     </div>
-  </div>
 </div>
 
-<!-- About Section -->
+<!-- ----------about--------- -->
+
 <div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="images/rishinew.png" alt="Rishi Sharma">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <p>
-          Hello, I'm Rishi Sharma, a Software Engineer driven by a profound fascination for technology. I'm on a mission to create innovative solutions that make a difference.
-          <br><br>
-          My journey in the tech world began with a curiosity for software and its potential to change the world. I've had the privilege of working on exciting projects, where I've used my strong programming skills to craft practical solutions.
-          <br><br>
-          As a Python Full Stack developer, I've been a part of projects that follow structured development processes. I've leveraged tools like Power BI to turn data into insights, and I've optimized web applications for better user experiences. My skills include Python, SQL, React.js, and more.
-          <br><br>
-          I find joy in solving problems and communicating effectively. My goal is to continue exploring the endless possibilities of technology and collaborate on exciting projects. Let's embark on this journey together!
-        </p>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/rishinew.png" alt="Rishi Sharma">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello, I'm Rishi Sharma, a Software Engineer driven by a profound fascination for technology. I'm on a mission to create innovative solutions that make a difference.
+                    <br><br>
+                    My journey in the tech world began with a curiosity for software and its potential to change the world. I've had the privilege of working on exciting projects, where I've used my strong programming skills to craft practical solutions.
+                    <br><br>
+                    As a Python Full Stack developer, I've been a part of projects that follow structured development processes. I've leveraged tools like Power BI to turn data into insights, and I've optimized web applications for better user experiences. My skills include Python, SQL, React.js, and more.
+                    <br><br>
+                    I find joy in solving problems and communicating effectively. My goal is to continue exploring the endless possibilities of technology and collaborate on exciting projects. Let's embark on this journey together!
+                </p>
 
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <!-- Skills Tab -->
+               <!-- ------------Skill------------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div class="skills-list">
+            <!-- Languages -->
+            <div>
+                <i class="fa-brands fa-python" style="color: #FFD43B;"></i>
+                <h2>Python</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-code" style="color: #fffdd0;"></i>
+                <h2>C/C++ / C# / Java</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+                <h2>JavaScript / TypeScript</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5" style="color: #E44D26;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #264DE4;"></i>
+                <h2>HTML / CSS</h2>
+            </div>
+
+            <!-- Frameworks -->
+            <div>
+                <i class="fa-brands fa-react" style="color: #00D8FF;"></i>
+                <h2>React / Angular</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-node-js" style="color: #3C873A;"></i>
+                <h2>Node.js / Express</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-flask" style="color: #000000;"></i>
+                <h2>Django / Flask</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i>
+                <h2>Bootstrap / Material UI</h2>
+            </div>
+
+            <!-- Databases -->
+            <div>
+                <i class="fa-solid fa-database" style="color: #007ACC;"></i>
+                <h2>MySQL / PostgreSQL / Oracle</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-database" style="color: #FFA500;"></i>
+                <h2>MongoDB / DynamoDB</h2>
+            </div>
+
+            <!-- Cloud & Big Data -->
+            <div>
+                <i class="fa-brands fa-aws" style="color: #FF9900;"></i>
+                <h2>AWS / GCP / Azure</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud" style="color: #00C853;"></i>
+                <h2>BigQuery / Dataproc / Compute Engine</h2>
+            </div>
+
+            <!-- Tools & DevOps -->
+            <div>
+                <i class="fa-brands fa-git-alt" style="color: #F05032;"></i>
+                <h2>Git / GitHub</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-bug" style="color: #E91E63;"></i>
+                <h2>Jira / CI/CD / SDLC</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-docker" style="color: #2496ED;"></i>
+                <h2>Docker / Kubernetes</h2>
+            </div>
+
+            <!-- Data Tools -->
+            <div>
+                <i class="fa-solid fa-chart-line" style="color: #4CAF50;"></i>
+                <h2>Power BI / Tableau / Excel</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears" style="color: #9C27B0;"></i>
+                <h2>Apache Spark / Airflow / SAS</h2>
+            </div>
         </div>
-
-        <!-- Skills Tab Content -->
-        <div class="tab-contents active-tab" id="skills">
-          <div class="skills-list">
-            <div>
-              <i class="fa-brands fa-python" style="color: #FFD43B;"></i>
-              <h2>Python</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-code" style="color: #fffdd0;"></i>
-              <h2>C/C++ / C# / Java</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
-              <h2>JavaScript / TypeScript</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-html5" style="color: #E44D26;"></i>
-              <i class="fa-brands fa-css3-alt" style="color: #264DE4;"></i>
-              <h2>HTML / CSS</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-react" style="color: #00D8FF;"></i>
-              <h2>React / Angular</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-node-js" style="color: #3C873A;"></i>
-              <h2>Node.js / Express</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-flask" style="color: #000000;"></i>
-              <h2>Django / Flask</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i>
-              <h2>Bootstrap / Material UI</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-database" style="color: #007ACC;"></i>
-              <h2>MySQL / PostgreSQL / Oracle</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-database" style="color: #FFA500;"></i>
-              <h2>MongoDB / DynamoDB</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-aws" style="color: #FF9900;"></i>
-              <h2>AWS / GCP / Azure</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-cloud" style="color: #00C853;"></i>
-              <h2>BigQuery / Dataproc / Compute Engine</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-git-alt" style="color: #F05032;"></i>
-              <h2>Git / GitHub</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-bug" style="color: #E91E63;"></i>
-              <h2>Jira / CI/CD / SDLC</h2>
-            </div>
-            <div>
-              <i class="fa-brands fa-docker" style="color: #2496ED;"></i>
-              <h2>Docker / Kubernetes</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-chart-line" style="color: #4CAF50;"></i>
-              <h2>Power BI / Tableau / Excel</h2>
-            </div>
-            <div>
-              <i class="fa-solid fa-gears" style="color: #9C27B0;"></i>
-              <h2>Apache Spark / Airflow / SAS</h2>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience Tab Content -->
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>American Express</span><br>Designed RDT-to-BMD pipeline, built GCP data pipelines, improved query efficiency by 30%, and led a 9-member engineering team.</li>
-            <li><span>CSUN College of Engineering and Computer Science</span><br>Optimized server pool management saving $400k/year and improved ML demand forecasting accuracy to 98.2%.</li>
-            <li><span>Acceron</span><br>Developed face recognition features, barcode extraction automation, and responsive React UI for web and mobile platforms.</li>
-            <li><span>Technostrap Digital Private Limited</span><br>Monitored 20,000+ radio streams via AWS, built RESTful APIs with DynamoDB, and improved product UI with React.</li>
-          </ul>
-        </div>
-
-        <!-- Education Tab Content -->
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>California State University-Northridge</span><br>Master's of Science in Computer Science</li>
-            <li><span>Shri Vaishnav Vidyapeeth Vishwavidyalaya</span><br>Bachelor's of Engineering in Information Technology</li>
-          </ul>
-        </div>
-
-      </div>
     </div>
-  </div>
 </div>
+
+                <!-- Experience Tab -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>American Express</span><br>
+                            Designed an RDT-to-BMD pipeline for seamless data transfer and integration using Python, PySpark, and SQL.<br>
+                            Implemented event engine flows to streamline data processes, reducing cross-team delays by 90%.<br>
+                            Led the migration of AMEX data from Cornerstone to LUMI (GCP platform), building pipelines with BigQuery, Dataproc, Airflow, and Compute Engine.<br>
+                            Led a team of 9 engineers to deliver projects on time with high code quality and performance standards.<br>
+                            Optimized PySpark and SQL queries, boosting pipeline efficiency and cutting processing time by 30%.
+                        </li>
+
+                        <li><span>CSUN College of Engineering and Computer Science</span><br>
+                            Project: Server Pool Optimization and Demand Prediction under supervision of Dr. Abhishek Verma.<br>
+                            Saved $400k annually by optimizing server pool management, reducing costs through system parameter adjustments.<br>
+                            Increased demand prediction accuracy from 96% to 98.2% by integrating new features into XGBoost models.<br>
+                            Refined forecasting with ML features, achieving more reliable and precise demand predictions.
+                        </li>
+
+                        <li><span>Acceron</span><br>
+                            Developed face recognition features with JavaScript, enabling precise boundary detection in selfies and ID photos.<br>
+                            Engineered face matching algorithms using Python, enhancing accuracy for live video and ID photo comparisons.<br>
+                            Automated barcode extraction with PDF417Decoder and OpenCV, improving driving license scanning efficiency.<br>
+                            Built responsive web and mobile UIs using React and Material UI, delivering fast, user-friendly experiences across platforms.
+                        </li>
+
+                        <li><span>Technostrap Digital Private Limited</span><br>
+                            Implemented a monitoring system for 20,000 radio streams using AWS, improving issue detection and satisfaction.<br>
+                            Built responsive mobile and web interfaces using React, JavaScript, and Material design to ensure seamless UX.<br>
+                            Built RESTful APIs integrated with DynamoDB to manage and query large scale station metadata.<br>
+                            Worked with SOAP and REST APIs, handling JSON/XML payloads efficiently for full-stack product deployment.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education Tab -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>California State University-Northridge</span><br>Master's of Science in Computer Science</li>
+                        <li><span>Shri Vaishnav Vidyapeeth Vishwavidyalaya</span><br>Bachelor's of Engineering in Information Technology</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 
                 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>California State University-Northridge</span><br>Master's of Science in Computer Science</li>
+                        <li><span>Shri Vaishnav Vidyapeeth Vishwavidyalaya</span><br>Bachelor's of Engineering in Information Technology</li>
+                        
+                    </ul>
+                </div>
+                                
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- ------------Skill------------- -->
 <div id="skills">
     <div class="container">
@@ -326,3 +379,5 @@
 </script>
 </body>
 </html>
+
+
